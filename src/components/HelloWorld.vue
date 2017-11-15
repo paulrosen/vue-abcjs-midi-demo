@@ -84,6 +84,9 @@ new abcjs.Editor("abc-source", {
 </script>
 
 <style>
+	.hello {
+		text-align: left;
+	}
 	#abc-source {
 		width: 460px;
 		height: 160px;
