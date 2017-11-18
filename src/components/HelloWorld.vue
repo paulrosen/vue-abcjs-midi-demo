@@ -8,7 +8,7 @@ npm install font-awesome --save</pre>
 		<p>The only necessary code to make this work is:</p>
 		<pre>import abcjs from "abcjs";
 abcjs.midi.soundfontUrl =
-  "http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/";
+  "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/";
 import "font-awesome/css/font-awesome.min.css";
 import 'abcjs/abcjs-midi.css';
 
@@ -35,7 +35,7 @@ new abcjs.Editor("abc-source", {
 
 <script>
 	import abcjs from "abcjs";
-	abcjs.midi.soundfontUrl = "http://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/";
+	abcjs.midi.soundfontUrl = "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/";
 	import "font-awesome/css/font-awesome.min.css";
 	import 'abcjs/abcjs-midi.css';
 
