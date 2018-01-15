@@ -3,14 +3,12 @@
 		<h1>Vue Midi abcjs Demo</h1>
 		<p>This is a simple app that just displays an audio control.</p>
 		<p>The only addition to the standard vue-cli app's dependencies is:</p>
-		<pre>npm install abcjs --save
+		<pre>npm install abcjs --save-dev
 npm install font-awesome --save</pre>
 		<p>The only necessary code to make this work is:</p>
-		<pre>import abcjs from "abcjs";
-abcjs.midi.soundfontUrl =
-  "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/";
-import "font-awesome/css/font-awesome.min.css";
+		<pre>import "font-awesome/css/font-awesome.min.css";
 import 'abcjs/abcjs-midi.css';
+import abcjs from "abcjs/midi";
 
 new abcjs.Editor("abc-source", {
 	canvas_id: "paper",
@@ -34,10 +32,9 @@ new abcjs.Editor("abc-source", {
 </template>
 
 <script>
-	import abcjs from "abcjs";
-	abcjs.midi.soundfontUrl = "https://gleitz.github.io/midi-js-soundfonts/FluidR3_GM/";
 	import "font-awesome/css/font-awesome.min.css";
 	import 'abcjs/abcjs-midi.css';
+	import abcjs from "abcjs/midi";
 
 	export default {
 		mounted: function () {
