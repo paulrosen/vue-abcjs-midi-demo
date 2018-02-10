@@ -15,7 +15,10 @@ new abcjs.Editor("abc-source", {
 	generate_midi: true,
 	midi_id: "midi"
 });</pre>
-		<p>In addition, this demo shows how to use the callbacks provided by the MIDI controls. See the file "Hello.vue"
+		<pre>&lt;textarea id="abc-source"&gt;&lt;/textarea&gt;
+&lt;div id="midi"&gt;&lt;/div&gt;
+&lt;div id="paper"&gt;&lt;/div&gt;</pre>
+		<p>In addition, this demo shows how to use the callbacks provided by the MIDI controls. See the file "HelloWorld.vue"
 			to see how to use that.
 		</p>
 		<textarea id="abc-source">{{tune}}</textarea>
