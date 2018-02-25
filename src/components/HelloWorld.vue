@@ -21,7 +21,7 @@ new abcjs.Editor("abc-source", {
 		<p>In addition, this demo shows how to use the callbacks provided by the MIDI controls. See the file "HelloWorld.vue"
 			to see how to use that.
 		</p>
-		<textarea id="abc-source">{{tune}}</textarea>
+		<textarea id="abc-source" v-model="tune"></textarea>
 		<div class="listener-output">
 			<div class="label">Parameters sent to listener callback: </div>
 			<div>Progress: {{progress.progress }}</div>
