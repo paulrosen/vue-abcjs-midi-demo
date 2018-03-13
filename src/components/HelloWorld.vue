@@ -47,8 +47,8 @@ new abcjs.Editor("abc-source", {
 				canvas_id: "paper",
 				generate_midi: true,
 				midi_id: "midi",
-				midi_options: {
-					listener: this.listener,
+				abcjsParams: {
+					midiListener: this.listener,
 					animate: {
 						listener: this.animate,
 					}
