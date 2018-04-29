@@ -72,7 +72,7 @@ new abcjs.Editor("abc-source", {
 				if (range && range.elements) {
 					range.elements.forEach(function (set) {
 						set.forEach(function (item) {
-							item.attr({fill: color});
+							item.setAttribute("fill", color);
 						});
 					});
 				}
